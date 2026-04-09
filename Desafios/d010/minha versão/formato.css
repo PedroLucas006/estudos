@@ -1,0 +1,333 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'idroid';
+  src: url('fontes/idroid.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+html, body {
+  overflow-x: hidden;
+}
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: normal 400 1em 'Open Sans', sans-serif;
+}
+#menu {
+  padding-bottom: 5px;
+
+}
+header>h1 {
+  text-align: center;
+  padding-top: 25px;
+  margin-bottom: 15px;
+  font-family: 'Bebas Neue', Sans-Serif;
+}
+header>p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+nav>a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main {
+  width: 100%;
+  padding-bottom: 20px;
+  border-radius: 0px 0px 15px 15px;
+}
+h1 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-family: 'idroid', Sans-Serif;
+  font-weight: 400px;
+}
+h2 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  font-family: 'idroid', Sans-Serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0px;
+}
+article.curiosidades>p {
+  padding-top: 15px;
+}
+article.curiosidades {
+  margin-top: 0px;
+  padding: 0px 0px 25px 0px;
+  margin: 0px 30px 15px 30px;
+  border-radius: 0px 0px 15px 15px;
+}
+header.curiosidades {
+  margin: 10px 30px 0px 30px;
+  padding-bottom: 0px;
+  border-radius: 15px 15px 0px 0px;
+}
+p.curiosidades {
+  margin-top: 0px;
+  padding-top: 10px;
+}
+p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+aside { 
+  display: inline-block;
+}
+.coluna-1 {
+  margin-left: 10px;
+}
+.coluna-2 {
+  margin-left: 300px;
+}
+ul {
+  list-style-type: none;
+}
+span {
+  font-weight: 600;
+}
+p>a {
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: underline;
+}
+footer {
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+footer>p {
+  text-align: center;
+  margin: 0px;
+}
+/*celular*/
+@media(max-width: 460px) {
+  nav>a {
+    padding-right: 0px;
+    padding-left: 10px;
+  }
+  header>h1 {
+    padding-top: 10px;
+  }
+  header>p {
+    font-size: 15px;
+  }
+  #historia-mascote>h1 {
+    font-size: 30px;
+  }
+  p {
+    text-indent: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #dan-droids>img {
+    width: 340px;
+  }
+  #irina-blok>img {
+    width: 320px;
+    height: 320px;
+    margin: 10px 20px;
+  }
+  #bugdroid>img {
+    padding: 10px 20px;
+  }
+  iframe {
+    background-color: #195B37;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    width: 320px; 
+    height: 180px;
+  }
+  aside {
+    display: block;
+  }
+  .coluna-2 {
+    margin-left: 10px;
+  }
+  article.curiosidades>p {
+    padding-top: 5px;
+  }
+  footer>p {
+    font-size: 13px;
+  }
+}
+@media(min-width: 461px) and (max-width: 800px) {
+  main {
+    wid
+    marg
+  }
+  body {
+  font: normal 400 1em 'Open sans', sans-serif;
+  }
+  header>h1 {
+      padding-top: 10px;
+      margin: 0px;
+  }
+  p {
+    text-indent: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #dan-droids>img {
+    width: 460px;
+  }
+  #irina-blok>img {
+    width: 430px;
+    height: 430px;
+    margin: 10px 20px;
+  }
+  #bugdroid>img {
+    padding: 10px 80px;
+  }
+  iframe {
+    background-color: #195B37;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    width: 430px;
+    height: 241.875px;
+  }
+  aside {
+    display: block;
+  }
+  .coluna-2 {
+    margin-left: 10px;
+  }
+}
+/*ipad*/
+@media(min-width: 801px) and (max-width: 1100px) {
+  body {
+    font: normal 400 1.5em 'Open sans', sans-serif;
+  }
+  header>h1 {
+    font-size: 35px;
+  }
+  p {
+    text-indent: 20px;
+  }
+  #dan-droids>img {
+    width: 710px;
+  }
+  #irina-blok>img {
+    width: 700px;
+    height: 206.5px;
+    margin: 10px 20px;
+  }
+  #bugdroid>img {
+    padding: 10px 200px;
+  }
+  iframe {
+    background-color: #195B37;
+    padding: 20px 30px;
+    margin: 10px 0px;
+    width: 690px;
+    height: 399.375px;
+  }
+  aside {
+    display: inline-block;
+  }
+  .coluna-1 {
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  .coluna-2 {
+    margin-left: 100px;
+    margin-right: 0px;
+    padding-left: 0px;
+  }
+}
+@media(min-width: 1101px) and (max-width: 1300px) {
+
+  body {
+    font: normal 400 1.5em 'Open Sans', sans-serif;
+  }
+  header>h1 {
+    font-size: 38px;
+  }
+  p {
+    text-indent: 25px;
+  }
+  #dan-droids>img {
+    width: 1010px;
+  }
+  #irina-blok>img {
+    width: 970px;
+    height: 286.15px;
+    margin: 10px 20px;
+  }
+  #bugdroid>img {
+    padding: 10px 300px;
+  }
+  iframe {
+    background-color: #195B37;
+    padding: 25px 30px;
+    margin: 10px 0px;
+    width: 950px;
+    height: 545.625px;
+  }
+  
+}
+/*desktop*/
+@media(min-width: 1301px) and (max-width: 12000px) {
+  body {
+    font: normal 400 1.8em 'Open Sans', sans-serif;
+  }
+  header>h1 {
+    font-size: 40px;
+  }
+  header>p {
+    margin-bottom: 35px;
+  }
+  p {
+    text-indent: 30px;
+  }
+  #dan-droids>img {
+    width: 900px;
+    padding: 10px 200px;
+  }
+  #irina-blok>img {
+    width: 1260px;
+    height: 372.2px;
+    margin: 10px 20px;
+  }
+  #bugdroid>img {
+    padding: 10px 450px;
+  }
+  iframe {
+    background-color: #195B37;
+    padding: 25px 35px;
+    margin: 10px 0px 0px 0px;
+    width: 1237px;
+    height: 711.5625px;
+  }
+  footer>p {
+    font-size: 25px;
+  }
+}

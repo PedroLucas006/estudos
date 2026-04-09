@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+body {
+  background-color: #82D9A0;
+}
+#menu {
+  background: linear-gradient(to bottom, #39BF68, #1B5936);
+  color: white;
+}
+header>h1 {
+  color: white;
+}
+main {
+  background-color: white;
+   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+}
+p>a {
+  color: #005423;
+  background-color: #8BDEA8;
+}
+span {
+  color: #005423;
+}
+a {
+  color: white;
+}
+h1,h2 {
+  color: #236340;
+}
+h2 {
+  background: linear-gradient(to right, #CAEDD9 40%, #EFFAF4, #F6FBF7, #FBFDFC);
+}
+header.curiosidades {
+  background-color: #2FA865;
+  color: white;
+  box-shadow: 2px 0px 15px rgba(0, 0, 0, 0.20);
+}
+article.curiosidades {
+  background-color: #C5EAD6;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.20);
+}
+footer {
+  background-color: #195B37;
+  color: white;
+}

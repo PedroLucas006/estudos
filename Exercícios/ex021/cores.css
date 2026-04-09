@@ -1,0 +1,81 @@
+@charset "utf-8";
+body {
+    background-color: #9E9E9E;
+}
+header {
+  background-color: white;
+}
+nav {
+  background-color: #4D4D4D;
+  box-shadow: 2px 2px 8px #808080;
+}
+ #menu>a:link {
+    color: white;
+}
+#menu>a:visited {
+    color: white;
+}
+section {
+    background-color: white;
+}
+#assuntos {
+    background-color: white;
+    box-shadow: 2px 2px 10px #808080;
+}
+#assuntos>h1 {
+    background-color: #4D4D4D;
+    color: white;
+}
+.brasil {
+    color: #E0C82D;
+}
+.brasil>a {
+    color: #E0C82D;
+}
+.mundo {
+    color: #13287D;
+}
+.mundo>a {
+    color: #13287D;
+}
+.futebol {
+    color: #00E521;
+}
+.futebol>a {
+    color: #00D620;
+}
+#noticias {
+  box-shadow: 2px 2px 10px #808080;
+}
+#noticias>h1 {
+    background-color: #4D4D4D;
+    color: white;
+}
+article>a {
+  color: black;
+}
+h2.politica {
+    color: red;
+}
+h2.esportes {
+    color: #00E521;
+}
+h2.economia {
+    color: #522900;
+}
+aside>.economia {
+    color: #522900;
+}
+aside>.politica {
+    color: red;
+}
+aside>.esportes {
+    color: #00E521;
+}
+footer {
+    background-color: black;
+    color: white;
+}
+footer>a {
+    color: white;
+}

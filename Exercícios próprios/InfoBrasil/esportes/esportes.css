@@ -1,0 +1,127 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: #9E9E9E;
+}
+header {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0px;
+}
+nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  background-color: #4D4D4D;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+nav>a {
+  padding: 7px 20px 7px 20px;
+  text-decoration: none;
+  color: white;
+}
+main {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 1000px;
+}
+#categoria {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+#categoria>h2 {
+  font: normal 400 2em 'Montserrat', sans-serif;
+  color: #00E521;
+}
+section {
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.champions-league {
+  color: #020159;
+}
+.libertadores {
+  color: #BF8845;
+}
+article {
+  max-width: 900px;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.27);
+}
+img {
+  margin: auto
+  padding: 0px;
+  border-radius: 5px 5px 0px 0px;
+  width: 900px;
+}
+.diniz-corinthians {
+  width: 900px;
+  height: 703.4625px;
+}
+.diniz-selecao {
+  width: 900px;
+  height: 505.238px;
+}
+.destaque {
+  padding-bottom: 15px;
+  color: #00E521;
+}
+h3 {
+  margin: 10px;
+  padding: 5px 10px 15px 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+main a:hover {
+  color: #00E521;
+}
+ul {
+  list-style-type: none;
+}
+footer {
+    background-color: black;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+footer>a {
+    color: white;
+    text-align: center;
+    display: block;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer>p {
+  margin: 2px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+@media(min-width: 320px) and (max-width: 800px) {
+  nav {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  nav>a {
+    padding: 0px 8px;
+  }
+  img, .diniz-selecao, .diniz-corinthians {
+    width: 100%;
+    height: 100%;
+  }
+}
