@@ -53,6 +53,7 @@ Caso necessário, esses arquivos podem ser recriados ou substituídos.
 ## 🚀 Tecnologias
 - HTML
 - CSS
-
+## Site
+ - <a href="https://pedrolucas006.github.io/estudos/">Acesse o site do repositório </a>
 ## 👨‍💻 Autor
 Pedro Lucas
