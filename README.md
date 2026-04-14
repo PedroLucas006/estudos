@@ -45,6 +45,7 @@ Alguns arquivos não estão incluídos neste repositório, pois:
     <li><a href="html-css/exercicios/ex019/index.html">ex019</a></li>
     <li><a href="html-css/exercicios/ex020/index.html">ex020</a></li>
     <li><a href="html-css/exercicios/ex021/index.html">ex021</a></li>
+    <li><a href="html-css/exercicios/ex022/index.html">ex022</a></li>
   </ul>
 ## 📁 Observação
 
