@@ -24,6 +24,7 @@ Alguns arquivos não estão incluídos neste repositório, pois:
     <li><a href="html-css/desafios/d008/index.html">d008</a></li>
     <li><a href="html-css/desafios/d009/index.html">d009</a></li>
     <li><a href="html-css/desafios/d010/minha-versao/index.html">d010</a></li>
+    <li><a href="html-css/desafios/d011/minha-versao/index.html">d011</a></li>
 </ul>
   Exercícios
   <ul>
