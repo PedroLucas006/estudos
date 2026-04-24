@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    table {
+      border-collapse: collapse;
+      width: 500px;
+      margin: auto;
+    }
+    
+    caption {
+      background-color: gray;
+      font-size: 1.5em;
+      font-weight: bolder;
+      color: white;
+      border-width: 1px 1px 0px 1px;
+      border-color: black;
+      border-style: solid;
+      padding: 8px;
+    }
+    
+    thead th {
+      position: sticky;
+      top: -1px;
+      background-color: gray;
+    }
+    
+    thead, tfoot {
+      background-color: gray;
+      color: white;
+    }
+    
+    td, th {
+      border: 1px solid black;
+      padding: 8px;
+    }
+    
+    tbody>tr:nth-child(even) {
+      background-color: lightgray;
+    } /*O efeito zebrado é muito recomendado para quando se tem uma tabela com muitas colunas ou quando a fonte é muito pequena da tabela.O que é colado entre parênteses é a razão da sequência, se vai ser com números pares(even), números ímpares(odd) de 2 em 2 (2n) ou três em três (3n) e assim por diante. O pseudo-elemento nth-child pode ser usado para outras coisas também, pois, por exemplo, pode-se querer definir a característica de um único <p> que, de cima para baixo, está na ordem 3, em um container de vários <p>, isso vai ser possível graças a esse pseudo elemento:
+      ...>p:nth-child(3) {
+      .......
+        }
+        */
+    
+    .num {
+      text-align: right;
+      width: 100px;
+    }
+    
+    </style>
+</head>
+<body>
+  <h1>Tabela grande</h1>
+  
+  <table>
+    <caption>População por estado</caption>
+    <thead>
+      <tr>
+        <th scope="col">Unidade federativa</th>
+        <th scope="row">População</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <td>São Paulo</td>
+        <td class="num">46 081 801</td>
+      </tr>
+      
+      <tr>
+        <td>Minas Gerais</td>
+        <td class="num">21 393 441</td>
+      </tr>
+      
+      <tr>
+        <td>Rio de Janeiro</td>
+        <td class="num">17 223 547</td>
+      </tr>
+      
+      <tr>
+        <td>Bahia</td>
+        <td class="num">14 870 907</td>
+      </tr>
+      
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11 890 517</td>
+      </tr>
+      
+      <tr>
+        <td>Rio Grande do Sul</td>
+        <td class="num">11 233 263</td>
+      </tr>
+      
+      <tr>
+        <td>Pernambuco</td>
+        <td class="num">9 562 007	</td>
+      </tr>
+      
+      <tr>
+        <td>Ceará</td>
+        <td class="num">9 268 836</td>
+      </tr>
+      
+      <tr>
+        <td>Pará</td>
+        <td class="num">8 711 196</td>
+      </tr>
+      
+      <tr>
+        <td>Santa Catarina</td>
+        <td class="num">8 187 029</td>
+      </tr>
+      
+      <tr>
+        <td>Goiás</td>
+        <td class="num">7 423 629	</td>
+      </tr>
+      
+      <tr>
+        <td>Maranhão</td>
+        <td class="num">7 018 211</td>
+      </tr>
+      
+      <tr>
+        <td>Amazonas</td>
+        <td class="num">4 321 616</td>
+      </tr>
+      
+      <tr>
+        <td>Paraíba</td>
+        <td class="num">4 164 468</td>
+      </tr>
+      
+      <tr>
+        <td>Espírito Santo</td>
+        <td class="num">4 126 854</td>
+      </tr>
+      
+      <tr>
+        <td>Mato Grosso</td>
+        <td class="num">3 893 659</td>
+      </tr>
+      
+      <tr>
+        <td>Rio Grande do Norte</td>
+        <td class="num">3 455 236</td>
+      </tr>
+      
+      <tr>
+        <td>Piauí</td>
+        <td class="num">3 384 547</td>
+      </tr>
+      
+      <tr>
+        <td>Alagoas</td>
+        <td class="num">3 220 848	</td>
+      </tr>
+      
+      <tr>
+        <td>Distrito Federal</td>
+        <td class="num">2 996 899</td>
+      </tr>
+      
+      <tr>
+        <td>Mato Grosso do Sul</td>
+        <td class="num">2 924 631</td>
+      </tr>
+      
+      <tr>
+        <td>Sergipe</td>
+        <td class="num">2 299 425</td>
+      </tr>
+      
+      <tr>
+        <td>Rondônia</td>
+        <td class="num">1 751 950</td>
+      </tr>
+      
+      <tr>
+        <td>Tocantis</td>
+        <td class="num">1 586 859	</td>
+      </tr>
+      
+      <tr>
+        <td>Acre</td>
+        <td class="num">884 372	</td>
+      </tr>
+      
+      <tr>
+        <td>Amapá</td>
+        <td class="num">806 517</td>
+      </tr>
+      
+      <tr>
+        <td>Roraima</td>
+        <td class="num">738 772	</td>
+      </tr>
+    </tbody>
+    
+    <tfoot>
+      <th scope="row">População Total</th>
+      <td class="num"><strong>213 421 037</strong></td>
+    </tfoot>
+    
+  </table>
+  <p>Cillum do quis magna quis ullamco quis eu. Voluptate tempor dolore est laborum anim ipsum nulla consectetur aliqua proident aute in. Exercitation dolor culpa amet proident id occaecat et labore aliqua culpa. Dolore consequat esse quis est ipsum sit eu exercitation sit sint qui. Duis enim non adipisicing eiusmod magna nulla deserunt consequat irure irure.
+Voluptate aliquip incididunt nostrud pariatur labore minim excepteur do laborum. Ullamco proident officia Lorem elit minim labore excepteur irure. Officia laboris commodo exercitation enim laboris nisi ea minim commodo incididunt laboris cillum cillum laboris. Nisi nostrud esse irure quis magna irure. Do et cillum ullamco proident ad officia aliqua.
+Nisi tempor incididunt aute consequat nulla eiusmod commodo aute sint fugiat. Elit magna in reprehenderit veniam amet sint laboris veniam consectetur amet nulla amet nostrud. Dolore nulla tempor dolore magna laborum fugiat anim enim eiusmod fugiat quis et sint. Dolor labore laborum consectetur veniam officia id Lorem excepteur consequat commodo aute incididunt nisi magna. Pariatur ea labore reprehenderit sit ut nisi sunt.
+Fugiat do ad sunt magna sit elit excepteur non minim. Lorem minim magna sit mollit aute sunt ut aute eiusmod. Sit minim Lorem adipisicing veniam mollit laborum fugiat nisi consectetur id laborum ea. Laborum officia dolor esse sunt quis. Sit id ea voluptate ad nisi veniam cupidatat pariatur eiusmod magna dolore et. Laboris proident quis enim et aliqua elit mollit magna aliquip ex eiusmod aliquip sint.
+Qui ut ipsum ut dolor veniam officia. Qui occaecat commodo culpa esse cupidatat eu. Sit laborum est ut sunt dolor dolore. Id ut ut labore cupidatat. Do fugiat non occaecat occaecat enim ex quis consectetur duis qui do.
+Sint culpa ex ad quis elit voluptate mollit dolore laborum anim eiusmod. Nulla esse nisi ex est fugiat. Labore fugiat id nulla enim amet. Culpa sint duis irure cillum anim non. Irure pariatur occaecat incididunt occaecat officia nulla eu eiusmod Lorem.
+Anim tempor labore cillum amet commodo eu culpa sit velit veniam sint non amet occaecat. Ex officia magna sit nisi voluptate ullamco adipisicing tempor. Officia labore laboris nostrud exercitation excepteur commodo aute tempor. Nulla eiusmod Lorem eiusmod esse sint deserunt veniam deserunt non cupidatat.
+Deserunt eu non excepteur laborum veniam incididunt sint ullamco ut excepteur. Incididunt duis quis minim id nulla. Ex in exercitation aliqua ad labore voluptate sint sit mollit.
+Amet et sunt aliquip consequat et velit sit sit deserunt id incididunt veniam dolor. Eiusmod fugiat nostrud aute nostrud voluptate voluptate sunt deserunt id in. Do eu velit qui enim ea ex sint esse ea. Et esse adipisicing exercitation ad ea officia nulla pariatur deserunt exercitation excepteur proident minim. Anim tempor Lorem minim anim aute in adipisicing labore commodo ea aliqua proident Lorem. Proident mollit irure amet consequat reprehenderit commodo labore labore sint adipisicing Lorem commodo.
+Aliquip eu consequat proident nostrud nisi commodo excepteur aliqua incididunt. Lorem non proident officia esse nulla. Officia laborum velit enim nostrud enim enim nisi.</p>
+<p>Pariatur dolor aliqua velit cillum reprehenderit ea proident cupidatat quis esse dolor do sit sunt. Enim sunt ut do deserunt sit ut occaecat reprehenderit duis do ut consectetur incididunt. Pariatur exercitation irure cupidatat ut dolore sit adipisicing eiusmod laboris incididunt. Nulla amet laboris adipisicing ea aliqua pariatur voluptate proident sit. Cupidatat laboris velit eiusmod nulla pariatur laboris ipsum dolore.
+Nisi aliquip incididunt eiusmod est elit culpa. Cupidatat in et laboris esse laboris nulla ut et laboris ullamco commodo. Non excepteur commodo aute ut fugiat voluptate in cillum sunt. Proident enim ea aliqua eu adipisicing eu. Minim et magna eiusmod minim fugiat ea magna.
+Adipisicing fugiat ea reprehenderit incididunt exercitation in id minim reprehenderit minim esse ullamco ut adipisicing. Voluptate deserunt deserunt laboris consectetur duis non non exercitation sint dolore. Commodo enim mollit veniam sunt aute exercitation elit culpa cupidatat quis. Eiusmod minim duis quis ullamco in do amet.
+Adipisicing reprehenderit qui irure consequat exercitation enim ipsum. Adipisicing reprehenderit est aliquip enim cupidatat sit mollit exercitation voluptate laborum aliquip nostrud consectetur commodo. Aliqua dolor occaecat officia laboris dolore culpa deserunt sint veniam. Labore qui dolore nostrud duis ipsum sunt. Culpa laboris eu qui culpa commodo.
+Proident incididunt excepteur esse deserunt elit sunt nisi nostrud voluptate cillum sit enim. Esse minim excepteur in occaecat. Commodo exercitation velit ex sit voluptate. Dolor aute aute incididunt minim aliquip in est elit officia nulla non et ea. Magna exercitation in proident adipisicing. Occaecat exercitation aute ullamco ullamco ipsum veniam ad laboris fugiat sit incididunt esse Lorem anim.
+Quis duis nulla consectetur anim duis incididunt commodo sit et ad in. Aute nostrud occaecat eu exercitation. Enim qui aliquip cupidatat ipsum ullamco voluptate. Excepteur nostrud consectetur magna et non occaecat eiusmod Lorem ex. Adipisicing nulla Lorem ea irure laborum voluptate quis. Culpa aute irure non enim consectetur labore consequat pariatur quis ipsum nostrud reprehenderit cupidatat non. Cillum proident proident ex excepteur nulla irure occaecat ullamco.
+Id duis do culpa dolor consequat excepteur veniam. Sint fugiat fugiat ipsum ullamco aliquip consectetur esse laboris incididunt. Ut deserunt laboris velit enim proident officia veniam sint eiusmod. In excepteur deserunt adipisicing do sunt amet proident fugiat non officia ad nostrud minim consequat. Non proident veniam id fugiat ea sunt cillum veniam consequat culpa labore pariatur. Sint proident amet ex ex ea exercitation ea.
+Cupidatat Lorem veniam consequat amet excepteur nulla culpa sit labore exercitation qui aute cillum fugiat. Ea do culpa nisi cupidatat cillum velit nulla. Reprehenderit est velit velit ullamco in reprehenderit cupidatat commodo anim aute. Non exercitation nostrud labore fugiat ullamco nisi duis laboris labore aute magna duis eu. Nisi aliqua ea sint consequat deserunt reprehenderit mollit officia adipisicing velit aute non deserunt.
+Commodo dolore occaecat ad consequat ex ipsum quis eiusmod qui id nostrud. Exercitation ullamco enim veniam sunt dolore est voluptate. Eu eu quis nostrud deserunt commodo consequat consectetur incididunt minim aliqua incididunt irure velit anim. Eiusmod commodo occaecat ex velit velit velit occaecat laboris dolor non et. Magna officia id ullamco minim laborum minim veniam nulla officia aliquip aliqua proident occaecat. In culpa excepteur amet labore laboris voluptate eiusmod in ipsum. Ex deserunt duis aute consequat.
+Ea est culpa elit adipisicing culpa elit. Est exercitation nisi exercitation aliqua ea cillum excepteur et ex eu irure fugiat. Incididunt irure laboris qui aliquip reprehenderit incididunt pariatur eu nulla et.</p>
+</body>
+</html>
