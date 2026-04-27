@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+    
+    body {
+      font-family: Arial, Helvetica, Sans-Serif;
+    }
+    
+    div.container {
+      overflow-x: auto;
+    }
+    
+    table {
+      border-collapse: collapse;
+    }
+    
+    caption {
+      font-weight: bold;
+      font-size: 1.3em;
+      margin: 8px;
+    }
+    
+    tbody>tr:nth-child(even) {
+      background-color: gray;
+    }
+    
+    td, th {
+      padding: 8px;
+      border: 1px solid black;
+    }
+    
+    col.cazul {
+      background-color: blue;
+    }
+    
+    </style>
+</head>
+<body>
+  <h1>Criando tabelas responsivas</h1>
+  <p>Magna fugiat et culpa elit minim consectetur Lorem in sit aute. Occaecat cillum culpa anim laborum et voluptate. Anim culpa ad enim voluptate consequat in officia qui aliqua. Laboris anim anim anim ea eu non pariatur ea ea ipsum laborum cupidatat culpa. Adipisicing velit eu nulla elit cillum qui nostrud magna proident irure reprehenderit esse mollit laboris. Nisi consectetur reprehenderit excepteur ex culpa quis cillum dolore esse id laboris incididunt. Consequat elit ex aute ipsum laboris elit eu velit ex officia commodo. Dolore ullamco ad nulla culpa enim. Fugiat eiusmod irure voluptate cupidatat consectetur tempor fugiat officia minim exercitation et magna deserunt sit. Mollit tempor irure proident nostrud sit fugiat eiusmod incididunt non velit adipisicing officia incididunt. Qui cillum adipisicing sunt nulla anim deserunt. Quis ullamco id irure amet fugiat dolor. Magna qui cupidatat tempor sit. Exercitation tempor veniam excepteur amet incididunt. Voluptate icing laborum nulla minim. Dolor incididunt irure sit id cupidatat sunt anim laborum minim ut eiusmod deserunt. Esse est labore eu magna enim. Consectetur reprehenderit mollit cupidatat duis exercitation nulla sint laborum veniam ipsum consequat ut dolor. Amet eu elit elit occaecat ipsum labore. Quis sit veniam tempor do eiusmod eu voluptate nostrud irure velit. In incididunt et et Lorem ex reprehenderit laborum elit qui aute do consequat. Amet aliqua quis id eiusmod anim  id cillum ex ex dolor officia irure culpa. Eiusmod eiusmod ullamco eiusmod sit pariatur anim pariatur do ullamco. Id amet irure nulla in irure et pariatur labore occaecat excepteur cupidatat mco et ariatur irure aliquip irure duis. Velit velit fugiat eu mollit velit sint fugiat sit ut pariatur Lorem adipisicing. Sint ut incididunt consequat elit commodo ullamco et labore cillum veniam laborum ea ut do. Sunt exercitation culpa ea minim. Enim nulla aliqua  qui aute ut aute sint aliquip anim in. Nulla cillum adipisicing incididunt minim ut anim nulla veniam nisi.</p>
+  
+  <div class="container">
+    <table>
+      
+      <colgroup>
+        <col>
+        <col class="cazul">
+      </colgroup>
+      
+      <caption>
+        Tabelas responsivas
+      </caption>
+      
+      <thead>
+        <th scope="col">Produto</th>
+        <th scope="col">Jan</th>
+        <th scope="col">Fev</th>
+        <th scope="col">Mar</th>
+        <th scope="col">Abr</th>
+        <th scope="col">Mai</th>
+        <th scope="col">Jun</th>
+        <th scope="col">Jul</th>
+        <th scope="col">Ago</th>
+        <th scope="col">Set</th>
+        <th scope="col">Out</th>
+        <th scope="col">Nov</th>
+        <th scope="col">Dez</th>
+      </thead>
+      
+      <tbody>
+        
+        <tr>
+          <td>Tv 40"</td>
+          <td>15</td>
+          <td>13</td>
+          <td>8</td>
+          <td>9</td>
+          <td>9</td>
+          <td>10</td>
+          <td>7</td>
+          <td>9</td>
+          <td>3</td>
+          <td>5</td>
+          <td>8</td>
+          <td>7</td>
+        </tr>
+        
+        <tr>
+          <td>Home Theater</td>
+          <td>7</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+          <td>12</td>
+          <td>8</td>
+          <td>4</td>
+          <td>19</td>
+          <td>20</td>
+          <td>15</td>
+          <td>11</td>
+          <td>10</td>
+        </tr>
+        
+        <tr>
+          <td>Samsung Galaxy S20</td>
+          <td>9</td>
+          <td>2</td>
+          <td>3</td>
+          <td></td>
+          <td>5</td>
+          <td>7</td>
+          <td>10</td>
+          <td>9</td>
+          <td>7</td>
+          <td>7</td>
+          <td>20</td>
+          <td>1</td>
+        </tr>
+        
+        <tr>
+          <td>iPad Mini</td>
+          <td>2</td>
+          <td>5</td>
+          <td>3</td>
+          <td>9</td>
+          <td>7</td>
+          <td>9</td>
+          <td>5</td>
+          <td>10</td>
+          <td>18</td>
+          <td>17</td>
+          <td>11</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Playstation 4</td>
+          <td>2</td>
+          <td>5</td>
+          <td>3</td>
+          <td>9</td>
+          <td>7</td>
+          <td>9</td>
+          <td>5</td>
+          <td>10</td>
+          <td>18</td>
+          <td>17</td>
+          <td>11</td>
+          <td>20</td>
+        </tr>
+        
+        <tr>
+          <td>Amazon Echo</td>
+          <td>2</td>
+          <td>5</td>
+          <td>3</td>
+          <td>9</td>
+          <td>7</td>
+          <td>9</td>
+          <td>5</td>
+          <td>10</td>
+          <td>18</td>
+          <td>17</td>
+          <td>11</td>
+          <td>20</td>
+        </tr>
+        
+        <tr>
+          <td>Lava louças</td>
+          <td>2</td>
+          <td>5</td>
+          <td>3</td>
+          <td>9</td>
+          <td>7</td>
+          <td>9</td>
+          <td>5</td>
+          <td>10</td>
+          <td>18</td>
+          <td>17</td>
+          <td>11</td>
+          <td>20</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
