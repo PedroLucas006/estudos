@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+  <h1>Preencha os campos abaixo</h1>
+  <form autocomplete="on" method="POST" action="cadastro.php">
+    <p>
+      <label for="usuario">Usuário: </label>
+      <input type="text" name="usuario" id="usuario" minlength="4" maxlength="20" size="20" placeholder="Insira seu nome de usuário" autocomplete="username" required>
+    </p>
+    <p>
+      <label for="senha">Senha: </label>
+      <input type="password" name="senha" id="senha" minlength="6" maxlength="12" size="12" placeholder="Insira sua senha" autocomplete="current-password" required>
+    </p>
+    <p>
+      <input type="submit" value="Entrar">
+      <input type="reset" value="Limpar">
+    </p>
+  </form>
+  
+  <form autocomplete="on" action="cadastro.php" method="GET">
+    <p>
+      <label for="nome">Nome: </label>
+      <input type="text" name="nome" id="nome" required placeholder="Insira seu nome aqui" autocomplete="name">
+    </p>
+    <p>
+      <label for="endereço">Endereço: </label>
+      <input type="text" name="endereço" id="endereço" required placeholder="Insira se endereço aqui" autocomplete="street-address">
+    </p>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+  </form>
+</body>
+</html>
