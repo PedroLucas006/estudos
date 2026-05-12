@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* Para dispositivos de tela*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, Sans-Serif;
+}
+
+header h1 {
+  background-color: lightgrey;
+  text-align: center;
+  padding: 20px;
+}
+
+menu {
+  background-color: grey;
+  color: white;
+  margin-bottom: 15px;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 6px;
+}
+
+main {
+  width: 600px;
+  margin: auto;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+main h1, h2, p {
+  margin: 10px;
+}
+
+main h1 {
+  margin-bottom: 20px;
+}
+
+/* Dispositivos móveis */
+@media (max-width: 599px) {
+  main {
+    width: 360px;
+  }
+}
