@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* Estilização geral */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, Sans-Serif;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  background-color: #233eff;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  padding: 10px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilização para orientação retrato */
+
+@media screen and (orientation: portrait) {
+  
+  body {
+    background-image: url('../imagens/cev-portrait.jpg');
+    background-position: center bottom;
+  }
+}
+
+/* Estilização para orientação paisagem */
+
+@media screen and (orientation: landscape) {
+  
+  body {
+    background-image: url('../imagens/cev-landscape.jpg');
+    background-position: left bottom;
+  }
+}
