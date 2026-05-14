@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* Demais dispositivos */
+
+@media print {
+  main {
+    border: 1px solid black;
+  }
+  
+  main::after {
+    content: 'Esse conteúdo foi criado para o www.cursoemvideo.com';
+  }
+  
+  h1 {
+    color: black;
+    text-shadow: none;
+  }
+  
+  #print {
+    display: block;
+  }
+  
+  #tablet, #phone, #pc, #tv {
+  display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    background-image: url('../imagens/back-tablet.jpg');
+  }
+  
+  #tablet {
+    display: block;
+  }
+  
+  #phone, #print, #pc, #tv {
+  display: none;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  body {
+    background-image: url('../imagens/back-pc.jpg');
+  }
+  
+  #pc {
+    display: block;
+  }
+  
+  #tablet, #print, #phone, #tv {
+  display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url('../imagens/back-tv.jpg');
+  }
+  
+  #tv {
+    display: block;
+  }
+  
+  #tablet, #print, #pc, #phone {
+  display: none;
+  }
+}
