@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+* {
+  font-family: "Courier New", Courier, Monospace;
+}
+
+span#menu-symbol {
+  display: none;
+}
+
+menu {
+  display: none;
+}

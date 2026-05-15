@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/device-m.css" media="screen and (min-width: 768px) and (max-width: 992px)">
+    <link rel="stylesheet" href="estilos/device-g.css" media="screen and (min-width: 992px)">
+    <link rel="stylesheet" href="estilos/print.css" media="print">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <title>Media Query</title>
+</head>
+<body>
+  <header>
+    <h1>Meu site</h1>
+    <span id="menu-symbol" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    <menu id="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Notícias</a></li>
+        <li><a href="#">Curiosidades</a></li>
+        <li><a href="#">Tecnologia</a></li>
+        <li><a href="#">Esportes</a></li>
+      </ul>
+    </menu>
+  </header>
+  <main>
+    <h1>Testando Media Queries</h1>
+    <p>Amet culpa qui occaecat dolore exercitation irure anim ut enim sit in commodo non incididunt sint nulla dolore magna aliquip laboris enim aliquip sunt consequat ea tempor in id aliqua fugiat nisi aliqua id ullamco laboris exercitation aliquip mollit proident est do consequat ex occaecat consequat elit elit exercitation eu laborum elit aliquip esse excepteur irure non anim incididunt culpa amet aliquip aute duis eiusmod eu ipsum qui occaecat aute proident reprehenderit consectetur ea irure irure proident esse excepteur deserunt do duis exercitation sit aute sint magna ad dolore eiusmod eiusmod non velit consectetur incididunt aute labore enim culpa incididunt. Nisi ullamco deserunt proident Lorem ullamco culpa amet adipisicing sunt Lorem minim amet Lorem nostrud velit elit pariatur ea voluptate cillum id laboris laboris deserunt magna fugiat enim in laboris deserunt aute qui veniam dolor do amet non non veniam nulla enim irure consectetur occaecat fugiat mollit occaecat irure esse dolor ullamco cillum mollit incididunt ipsum id fugiat amet ut ipsum anim non dolore sint aute amet eiusmod adipisicing in.</p>
+    <p>Aliquip cupidatat et officia irure cillum non aliqua culpa sunt aliquip duis nostrud proident veniam occaecat laborum culpa sit tempor culpa pariatur ad ad incididunt culpa anim magna ea officia sint laboris minim nostrud ad dolor enim sit quis anim consequat aliquip nisi sint proident commodo minim eu do ut ullamco fugiat officia commodo est ut ex officia est labore et culpa aliquip sint amet veniam tempor ipsum est cupidatat ullamco velit quis consectetur irure aute velit aliqua commodo ut fugiat nisi aliqua tempor ipsum fugiat deserunt excepteur ea aute enim mollit commodo ipsum proident pariatur aute ex deserunt irure et exercitation amet eu enim velit cillum commodo consectetur exercitation consequat velit sunt tempor eiusmod qui nostrud in non consequat.</p>
+    <p>Do incididunt velit sunt occaecat deserunt sunt occaecat fugiat duis pariatur occaecat ipsum anim enim dolore reprehenderit minim ullamco nulla enim esse pariatur amet amet labore deserunt dolor sit commodo nulla irure quis commodo cillum culpa anim eu deserunt Lorem cillum nulla adipisicing in labore est nulla in cillum culpa do elit eiusmod velit eu nulla exercitation cillum excepteur est irure ut consequat laboris anim occaecat ad consequat magna incididunt cillum consectetur exercitation nostrud culpa occaecat do nisi pariatur dolore irure minim sit sunt aliquip in tempor et reprehenderit sint irure reprehenderit qui et in adipisicing ea sint voluptate exercitation sit cupidatat duis voluptate excepteur aute proident laborum consequat et adipisicing aliquip quis labore fugiat consequat et eiusmod veniam anim.</p>
+  </main>
+  <script>
+    function clickMenu() {
+      if (menu.style.display=='block') {
+        menu.style.display='none'} else {
+          menu.style.display='block'
+        }
+      }
+  </script>
+</body>
+</html>
