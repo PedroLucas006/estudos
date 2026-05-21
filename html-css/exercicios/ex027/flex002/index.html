@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+    .conteiner, .conteiner2, .conteiner3, .conteiner4 {
+      margin-bottom: 10px;
+    }
+      .conteiner {
+        background: lightsalmon;
+        display: flex;
+        flex-direction: row;
+      }
+      .conteiner2 {
+        background: lightsalmon;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .conteiner3 {
+        background: lightsalmon;
+        display: flex;
+        flex-direction: column;
+      }
+      .conteiner4 {
+        background: lightsalmon;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      
+      .item {
+        background: lightblue;
+        border: 1px solid black;
+        flex: auto;
+        text-align: center;
+      }
+      
+    </style>
+</head>
+<body>
+  <div class="conteiner">
+    <div class="item">a</div>
+    <div class="item">b</div>
+    <div class="item">c</div>
+    <div class="item">d</div>
+    <div class="item">e</div>
+  </div>
+  <div class="conteiner2">
+    <div class="item">a</div>
+    <div class="item">b</div>
+    <div class="item">c</div>
+    <div class="item">d</div>
+    <div class="item">e</div>
+  </div>
+  <div class="conteiner3">
+    <div class="item">a</div>
+    <div class="item">b</div>
+    <div class="item">c</div>
+    <div class="item">d</div>
+    <div class="item">e</div>
+  </div>
+  <div class="conteiner4">
+    <div class="item">a</div>
+    <div class="item">b</div>
+    <div class="item">c</div>
+    <div class="item">d</div>
+    <div class="item">e</div>
+  </div>
+</body>
+</html>
