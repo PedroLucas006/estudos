@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+      .conteiner {
+        background: lightsalmon;
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 10px;
+      }
+      
+      .conteiner2 {
+        background: lightsalmon;
+        display: flex;
+        flex-flow: row wrap-reverse;
+        margin-bottom: 10px;
+      }
+      
+      .conteiner3 {
+        background: lightsalmon;
+        display: flex;
+        flex-flow: row-reverse wrap;
+        margin-bottom: 10px;
+      }
+      
+      .conteiner4 {
+        background: lightsalmon;
+        display: flex;
+        height: 140px;
+        flex-flow: column wrap;
+      }
+      
+      .item {
+        background: lightblue;
+        border: 1px solid black;
+        flex: auto;
+        text-align: center;
+        padding: 10px;
+      }
+      
+    </style>
+</head>
+<body>
+  <div class="conteiner">
+    <div class="item">Melhorando o bloco a</div>
+    <div class="item">Melhorando o bloco b</div>
+    <div class="item">Melhorando o bloco c</div>
+    <div class="item">Melhorando o bloco d</div>
+    <div class="item">Melhorando o bloco e</div>
+  </div>
+  <div class="conteiner2">
+    <div class="item">Melhorando o bloco a</div>
+    <div class="item">Melhorando o bloco b</div>
+    <div class="item">Melhorando o bloco c</div>
+    <div class="item">Melhorando o bloco d</div>
+    <div class="item">Melhorando o bloco e</div>
+  </div>
+  
+  <div class="conteiner3">
+    <div class="item">Melhorando o bloco a</div>
+    <div class="item">Melhorando o bloco b</div>
+    <div class="item">Melhorando o bloco c</div>
+    <div class="item">Melhorando o bloco d</div>
+    <div class="item">Melhorando o bloco e</div>
+  </div>
+  
+  <div class="conteiner4">
+    <div class="item">Melhorando o bloco a</div>
+    <div class="item">Melhorando o bloco b</div>
+    <div class="item">Melhorando o bloco c</div>
+    <div class="item">Melhorando o bloco d</div>
+    <div class="item">Melhorando o bloco e</div>
+  </div>
+</body>
+</html>
