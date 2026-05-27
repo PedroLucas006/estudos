@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+    .conteiner {
+      display: flex;
+      flex-flow: column nowrap;
+      height: 300px;
+      justify-content: space-evenly;
+    }
+    
+    .cx {
+      background: lightsalmon;
+      display: flex;
+      flex-flow: row nowrap;
+    }
+    
+    /*item 1*/
+    .item1 {
+      background: lightblue;
+      border: 1px solid black;
+      text-align: center;
+      flex-basis: 150px;
+      flex-grow: 1;
+      flex-shrink: 0;
+    }
+    
+    /*item 2*/
+    .item2 {
+      background: lightblue;
+      border: 1px solid black;
+      text-align: center;
+      flex-basis: 150px;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+    
+    /*item 3*/
+    .item3 {
+      background: lightblue;
+      border: 1px solid black;
+      text-align: center;
+      flex-basis: 150px;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+    
+    /*item 4*/
+    .item4 {
+      background: lightblue;
+      border: 1px solid black;
+      text-align: center;
+      flex-basis: 150px;
+    }
+    .item4:nth-child(1) {
+      flex-grow: 4;
+      flex-shrink: 4;
+    }
+    .item4:nth-child(2) {
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+    .item4:nth-child(3) {
+      flex-grow: 2;
+      flex-shrink: 0;
+    }
+    
+    /*item 5*/
+    .item5 {
+      background: lightblue;
+      border: 1px solid black;
+      text-align: center;
+      flex-basis: 150px;
+    }
+    .item5:nth-child(1) {
+      flex-grow: 4;
+      flex-shrink: 3;
+    }
+    .item5:nth-child(2) {
+      flex-grow: 4;
+      flex-shrink: 6;
+    }
+    .item5:nth-child(3) {
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+    
+    
+    </style>
+</head>
+<body>
+  <main>
+    <section class="conteiner">
+      <div class="cx">
+        <div class="item1">a</div>
+        <div class="item1">b</div>
+        <div class="item1">c</div>
+      </div>
+      <div class="cx">
+        <div class="item2">a</div>
+        <div class="item2">b</div>
+        <div class="item2">c</div>
+      </div>
+      <div class="cx">
+        <div class="item3">a</div>
+        <div class="item3">b</div>
+        <div class="item3">c</div>
+      </div>
+      <div class="cx">
+        <div class="item4">a</div>
+        <div class="item4">b</div>
+        <div class="item4">c</div>
+      </div>
+      <div class="cx">
+        <div class="item5">a</div>
+        <div class="item5">b</div>
+        <div class="item5">c</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
