@@ -25,6 +25,7 @@ header {
 
 header > h1 {
   flex: 0 0 200px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
 }
 
 nav {
@@ -50,7 +51,8 @@ nav > a:hover {
 }
 
 main {
-  margin: 10px;
+  max-width: 600px;
+  margin: 10px auto;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.33);
@@ -61,16 +63,18 @@ main {
   
   header {
     flex-flow: column nowrap;
-    justify-content: space-between;
   }
   
   header h1 {
-    flex: 0 0 50px;
+    flex-basis: 50px;
   }
   
   nav {
     flex-flow: column nowrap;
-    justify-content: space-between;
     width: 100%;
+  }
+  
+  main {
+    margin: 10px;
   }
 }
