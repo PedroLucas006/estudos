@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A new web page">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="favicon.ico">
+    <title>Grid Layout</title>
+    <style>
+    .container {
+      display: grid;
+      grid-template: repeat(3, 100px) / repeat(4, 1fr);
+    }
+    
+    .caixaA {
+      background: red;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+    
+    .caixaB {
+      background: green;
+      grid-row-start: 2;
+      grid-row-end: -1;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    
+    .caixaC {
+      background: blue;
+      grid-row-start: 2;
+      grid-row-end: -1;
+      grid-column-start: 3;
+      grid-column-end: -1;
+    }
+    
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="caixaA">Caixa A</div>
+    <div class="caixaB">Caixa B</div>
+    <div class="caixaC">Caixa C</div>
+  </div>
+</body>
+</html>
